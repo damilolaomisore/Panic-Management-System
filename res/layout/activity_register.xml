@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDFD"
+    android:backgroundTint="#F8F5F5"
+    
+    android:orientation="vertical"
+    tools:context=".registerActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFDFD"
+            android:backgroundTint="#F8F5F5"
+            android:orientation="vertical"
+            android:paddingHorizontal="1dp"
+            android:paddingVertical="1dp">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Registration"
+                android:textColor="#008577"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:layout_marginTop="50dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFDFD"
+                android:backgroundTint="#F8F5F5"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp">
+
+                <EditText
+                    android:id="@+id/firstnameEditText"
+                    android:layout_width="190dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="100dp"
+                    android:backgroundTint="#636262"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:textColor="#0E0E0E"
+                    android:textColorHint="#A1A0A0"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/lastnameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="4dp"
+                    android:backgroundTint="#636262"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:textColor="#101010"
+                    android:textColorHint="#A1A0A0"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#FFFDFD"
+                android:backgroundTint="#F8F5F5"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp">
+
+                <EditText
+                    android:id="@+id/usernameEditText"
+                    android:layout_width="357dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="27dp"
+                    android:backgroundTint="#636262"
+                    android:ems="10"
+                    android:hint="Username"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center"
+                    android:textColor="#0E0E0E"
+                    android:textColorHint="#AFAFAF"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/firstnameEditText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="#FFFDFD"
+                android:backgroundTint="#F8F5F5"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:theme="@style/ThemeOverlay.AppCompat.Light"
+                    android:layout_width="375dp"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center"
+                    android:gravity=""
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="26dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
+
+                <EditText
+                    android:id="@+id/answerEditText"
+                    android:layout_width="357dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="#636262"
+                    android:ems="10"
+                    android:hint="Answer"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="#0E0E0E"
+                    android:textColorHint="#AFAFAF"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#FFFDFD"
+                android:backgroundTint="#F8F5F5"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp">
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="357dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="#636262"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"
+                    android:textColor="#050505"
+                    android:textColorHint="#AFAFAF"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/answerEditText" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="159dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="126dp"
+                android:layout_marginEnd="126dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="bottom"
+                android:onClick="registerButton"
+                android:text="Register"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />`
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

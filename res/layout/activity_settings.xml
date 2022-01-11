@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE6E6"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/settTitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#A59D9D"
+        android:paddingHorizontal="9dp"
+        android:paddingVertical="9dp"
+        android:text="  Settings"
+        android:textColor="#090909"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginBaseline="76dp" />
+
+    <TextView
+        android:id="@+id/settKey"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="1dp"
+        android:autoSizeTextType="none"
+        android:autoText="false"
+        android:capitalize="none"
+        android:clickable="true"
+        android:contentDescription="Keywords"
+        android:contextClickable="true"
+        android:foregroundTint="#AB151515"
+        android:foregroundTintMode="screen"
+        android:layerType="none"
+        android:onClick="settKey"
+        android:paddingHorizontal="9dp"
+        android:paddingVertical="9dp"
+        android:tag="Name"
+        android:text="Set Keywords"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settTitle"
+        app:layout_marginBaseline="76dp"
+        app:layout_wrapBehaviorInParent="vertical_only"
+        tools:text="Set Keywords" />
+
+    <TextView
+        android:id="@+id/settCont"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:clickable="true"
+        android:contentDescription="contacts"
+        android:onClick="settCont"
+        android:paddingHorizontal="9dp"
+        android:paddingVertical="9dp"
+        android:text="Set Contact"
+        android:textColor="#090909"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settKey"
+        app:layout_marginBaseline="76dp"
+        tools:text="Set Contact" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
